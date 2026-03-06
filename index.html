@@ -3,8 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+
   <title>A & E Motor Works & Storage</title>
-  <meta name="description" content="A & E Motor Works & Storage — vehicle storage with hands-on maintenance. Contact for a quote." />
+
+  <meta name="description" content="Secure vehicle storage and maintenance services in Vista, CA. Battery care, periodic startups, and monitored storage.">
+  <meta name="author" content="A & E Motor Works & Storage">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="A & E Motor Works & Storage">
+  <meta property="og:description" content="Secure vehicle storage and maintenance services in Vista, CA. Battery care, periodic startups, and monitored storage.">
+  <meta property="og:image" content="images/Exterior2.JPG">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/AELogo.JPG">
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,192 +26,299 @@
 
   <!-- External CSS -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "A & E Motor Works & Storage",
+    "image": "images/Exterior2.JPG",
+    "telephone": "+14422243460",
+    "email": "eric@aemotorworks.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Vista",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "areaServed": "San Diego County"
+  }
+  </script>
 </head>
 
 <body>
-  <header>
-    <div class="wrap">
-      <div class="nav">
-        <div class="brand">
-          <img src="images/AELogo.JPG" alt="A & E Logo">
-          <div>
-            <div class="name">A &amp; E Motor Works &amp; Storage</div>
-            <div class="sub">Vehicle Storage • Storage Maintenance • Vista, CA</div>
-          </div>
-        </div>
 
-        <nav class="navlinks" aria-label="Site navigation">
-          <a href="#photos">Photos</a>
-          <a href="#videos">Videos</a>
-          <a href="#contact">Contact</a>
-          <button class="btn" id="quoteBtnTop" type="button">Contact for a Quote</button>
-        </nav>
+<header>
+  <div class="wrap">
+    <div class="nav">
+
+      <div class="brand">
+        <img src="images/AELogo.JPG" alt="A & E Motor Works logo" loading="lazy">
+
+        <div>
+          <div class="name">A &amp; E Motor Works &amp; Storage</div>
+          <div class="sub">Secure Vehicle Storage &amp; Maintenance • Vista, CA</div>
+        </div>
       </div>
+
+      <nav class="navlinks" aria-label="Site navigation">
+        <a href="#services">Services</a>
+        <a href="#photos">Photos</a>
+        <a href="#videos">Videos</a>
+        <a href="#contact">Contact</a>
+        <button class="btn" id="quoteBtnTop" type="button">Contact for a Quote</button>
+      </nav>
+
     </div>
-  </header>
+  </div>
+</header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="wrap">
-        <div class="hero-grid">
-          <div class="card hero-card">
-            <div class="kicker">Motor Works &amp; Storage</div>
-            <h1>Secure vehicle storage with hands-on care you can trust.</h1>
-            <p class="lead">
-              A &amp; E Motor Works &amp; Storage provides secure vehicle storage along with active maintenance
-              services—battery care, periodic startups, and ongoing attention to help keep your vehicle in
-              excellent condition while stored. Owned and operated by Eric Weirather, a trusted name in Vista, CA.
-            </p>
+<main>
 
-            <div class="hero-actions">
-              <button class="btn" id="quoteBtnHero" type="button">Contact for a Quote</button>
-              <a class="btn secondary" href="#photos">See Photos</a>
-            </div>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
 
-            <div class="badges">
-              <span class="badge">Vehicle Storage</span>
-              <span class="badge">Battery Maintenance</span>
-              <span class="badge">Periodic Startups</span>
-              <span class="badge">24/7 Camera Access</span>
-            </div>
-          </div>
+      <div class="card hero-card">
 
-          <div class="card hero-media">
-            <div class="media" role="img" aria-label="Featured vehicle/storage photo"></div>
-            <div class="caption">
-              <span>Placeholder hero photo (replace with your own)</span>
-              <span>📍 Vista, CA</span>
-            </div>
-          </div>
+        <div class="kicker">Motor Works &amp; Storage</div>
+
+        <h1>Secure vehicle storage with hands-on care you can trust.</h1>
+
+        <p class="lead">
+          A &amp; E Motor Works &amp; Storage provides secure vehicle storage along with active maintenance
+          services—battery care, periodic startups, and ongoing attention to help keep your vehicle in
+          excellent condition while stored. Owned and operated by Eric Weirather, a trusted name in Vista, CA.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn" id="quoteBtnHero" type="button">Contact for a Quote</button>
+          <a class="btn secondary" href="#photos">See Photos</a>
+        </div>
+
+        <div class="badges">
+          <span class="badge">Vehicle Storage</span>
+          <span class="badge">Battery Maintenance</span>
+          <span class="badge">Periodic Startups</span>
+          <span class="badge">24/7 Camera Access</span>
+        </div>
+
+      </div>
+
+      <div class="card hero-media">
+        <div class="media" role="img" aria-label="Featured vehicle storage photo"></div>
+
+        <div class="caption">
+          <span>Secure monitored facility</span>
+          <span>📍 Vista, CA</span>
         </div>
       </div>
-    </section>
 
-    <!-- PHOTOS -->
-    <section id="photos">
-      <div class="wrap">
-        <div class="section-title">
-          <h2>Photos</h2>
-          <p></p>
-        </div>
-
-        <div class="grid-3">
-          <div class="tile">
-            <img src="images/Interior2.JPG" alt="Photo 1">
-            <div class="tile-body">
-              <p class="t">Secure Storage</p>
-              <p class="d">Show the clean, organized space where vehicles are stored.</p>
-            </div>
-          </div>
-
-          <div class="tile">
-            <img src="images/Interior4.JPG" alt="Photo 2">
-            <div class="tile-body">
-              <p class="t">Battery Care</p>
-              <p class="d">Charging, maintenance, and attention that keeps vehicles ready.</p>
-            </div>
-          </div>
-
-          <div class="tile">
-            <img src="images/Exterior2.JPG" alt="Photo 3">
-            <div class="tile-body">
-              <p class="t">Facility</p>
-              <p class="d">Exterior, bays, and the professional environment in Vista, CA.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- VIDEOS -->
-    <section id="videos">
-      <div class="wrap">
-        <div class="section-title">
-          <h2>Videos</h2>
-        </div>
-
-        <div class="videos">
-          <div class="video">
-            <iframe
-              src="https://www.youtube.com/embed/JrBJIfMfmjo"
-              title="Placeholder video 1"
-              loading="lazy"
-              allowfullscreen></iframe>
-            <div class="meta">
-              <span>Facility overview (placeholder)</span>
-              <span>~60s</span>
-            </div>
-          </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <div class="wrap">
-        <div class="card contact">
-          <div>
-            <h3>Contact for a Quote</h3>
-            <p>
-              Click the button and send a quick note. Include the vehicle type, expected storage duration,
-              and any maintenance requests.
-            </p>
-
-            <div class="hero-actions">
-              <button class="btn" id="quoteBtnContact" type="button">Contact for a Quote</button>
-              <a class="btn secondary"
-                 href="mailto:eric@aemotorworks.com?subject=Quote%20Request%20-%20A%20%26%20E%20Motor%20Works%20%26%20Storage">
-                 Email Eric
-              </a>
-            </div>
-
-            <p class="hint">
-              Prefer text/call? Use the phone number to the right.
-            </p>
-          </div>
-
-          <div class="box">
-            <div class="kv">
-              <strong>Phone</strong><span>(442) 224-3460</span>
-              <strong>Email</strong><span>eric@aemotorworks.com</span>
-              <strong>Location</strong><span>Vista, CA</span>
-              <strong>Services</strong>
-              <span>Vehicle storage • Periodic startups • Battery charging/maintenance • 24/7 camera access</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="wrap">
-      © <span id="year"></span> A &amp; E Motor Works &amp; Storage. All rights reserved.
     </div>
-  </footer>
+  </div>
+</section>
 
-  <!-- MODAL -->
-  <dialog id="quoteDialog">
-    <div class="modal">
-      <div class="modal-head">
-        <h3>Request a Quote</h3>
-        <button class="x" id="closeDialog" type="button">✕</button>
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+
+    <div class="section-title">
+      <h2>Services</h2>
+    </div>
+
+    <div class="grid-3">
+
+      <div class="tile">
+        <div class="tile-body">
+          <p class="t">Vehicle Storage</p>
+          <p class="d">Secure indoor storage with camera monitoring.</p>
+        </div>
       </div>
 
-      <form id="quoteForm">
-        <input id="name" placeholder="Your name">
-        <input id="phone" placeholder="Phone">
-        <textarea id="details" placeholder="Vehicle details and storage info"></textarea>
-
-        <div class="form-actions">
-          <button class="btn" type="submit">Open Email</button>
-          <button class="btn secondary" type="button" id="cancelDialog">Cancel</button>
+      <div class="tile">
+        <div class="tile-body">
+          <p class="t">Battery Maintenance</p>
+          <p class="d">Battery charging and monitoring to keep vehicles ready.</p>
         </div>
-      </form>
-    </div>
-  </dialog>
+      </div>
 
-  <!-- External JS -->
-  <script src="script.js"></script>
+      <div class="tile">
+        <div class="tile-body">
+          <p class="t">Periodic Startups</p>
+          <p class="d">Regular startups and system checks to maintain vehicle health.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PHOTOS -->
+<section id="photos">
+  <div class="wrap">
+
+    <div class="section-title">
+      <h2>Photos</h2>
+    </div>
+
+    <div class="grid-3">
+
+      <div class="tile">
+        <img src="images/Interior2.JPG" alt="Secure vehicle storage facility" loading="lazy">
+        <div class="tile-body">
+          <p class="t">Secure Storage</p>
+          <p class="d">Clean and organized storage environment.</p>
+        </div>
+      </div>
+
+      <div class="tile">
+        <img src="images/Interior4.JPG" alt="Battery maintenance and care" loading="lazy">
+        <div class="tile-body">
+          <p class="t">Battery Care</p>
+          <p class="d">Charging and maintenance services.</p>
+        </div>
+      </div>
+
+      <div class="tile">
+        <img src="images/Exterior2.JPG" alt="A & E Motor Works facility exterior" loading="lazy">
+        <div class="tile-body">
+          <p class="t">Facility</p>
+          <p class="d">Professional storage facility located in Vista, CA.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section id="videos">
+  <div class="wrap">
+
+    <div class="section-title">
+      <h2>Videos</h2>
+    </div>
+
+    <div class="videos">
+
+      <div class="video">
+
+        <iframe
+          src="https://www.youtube.com/embed/JrBJIfMfmjo"
+          title="Facility overview"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+
+        <div class="meta">
+          <span>Facility overview</span>
+          <span>~60s</span>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+
+    <div class="card contact">
+
+      <div>
+
+        <h3>Contact for a Quote</h3>
+
+        <p>
+          Click the button and send a quick note. Include the vehicle type, expected storage duration,
+          and any maintenance requests.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn" id="quoteBtnContact" type="button">Contact for a Quote</button>
+
+          <a class="btn secondary"
+          href="mailto:eric@aemotorworks.com?subject=Quote%20Request%20-%20A%20%26%20E%20Motor%20Works%20%26%20Storage">
+          Email Eric
+          </a>
+        </div>
+
+        <p class="hint">
+          Prefer text or call? Use the phone number to the right.
+        </p>
+
+      </div>
+
+      <div class="box">
+
+        <div class="kv">
+
+          <strong>Phone</strong>
+          <span><a href="tel:+14422243460">(442) 224-3460</a></span>
+
+          <strong>Email</strong>
+          <span><a href="mailto:eric@aemotorworks.com">eric@aemotorworks.com</a></span>
+
+          <strong>Location</strong>
+          <span>Vista, CA</span>
+
+          <strong>Services</strong>
+          <span>Vehicle storage • Periodic startups • Battery charging • 24/7 camera access</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    © <span id="year"></span> A &amp; E Motor Works &amp; Storage. All rights reserved.
+  </div>
+</footer>
+
+<!-- MODAL -->
+<dialog id="quoteDialog">
+
+  <div class="modal">
+
+    <div class="modal-head">
+      <h3>Request a Quote</h3>
+      <button class="x" id="closeDialog" type="button">✕</button>
+    </div>
+
+    <form id="quoteForm">
+
+      <label for="name">Name</label>
+      <input id="name" name="name" placeholder="Your name" required>
+
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" placeholder="Phone number">
+
+      <label for="details">Vehicle Details</label>
+      <textarea id="details" name="details" placeholder="Vehicle type, storage length, and requests"></textarea>
+
+      <div class="form-actions">
+        <button class="btn" type="submit">Open Email</button>
+        <button class="btn secondary" type="button" id="cancelDialog">Cancel</button>
+      </div>
+
+    </form>
+
+  </div>
+
+</dialog>
+
+<script src="script.js"></script>
+
 </body>
 </html>
