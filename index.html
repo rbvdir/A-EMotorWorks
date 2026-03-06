@@ -6,281 +6,13 @@
   <title>A & E Motor Works & Storage</title>
   <meta name="description" content="A & E Motor Works & Storage — vehicle storage with hands-on maintenance. Contact for a quote." />
 
-  <!-- Clean pairing with your logo: Montserrat -->
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    :root{
-      --bg:#0b0c10;
-      --card:#11131a;
-      --text:#f2f4f8;
-      --muted:#b7bdc9;
-      --line:rgba(255,255,255,.12);
-      --accent:#d7b46a;
-      --accent2:#8fb3ff;
-      --radius:18px;
-      --shadow: 0 14px 40px rgba(0,0,0,.35);
-      --max: 1100px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: radial-gradient(1200px 600px at 20% 0%, rgba(215,180,106,.14), transparent 50%),
-                  radial-gradient(900px 600px at 80% 10%, rgba(143,179,255,.12), transparent 55%),
-                  var(--bg);
-      color:var(--text);
-      line-height:1.45;
-    }
-    a{color:inherit}
-    .wrap{max-width:var(--max); margin:0 auto; padding:0 20px;}
-    header{
-      position:sticky; top:0; z-index:50;
-      backdrop-filter: blur(10px);
-      background: rgba(11,12,16,.75);
-      border-bottom:1px solid var(--line);
-    }
-    .nav{
-      display:flex; align-items:center; justify-content:space-between;
-      padding:14px 0;
-      gap:16px;
-    }
-    .brand{
-      display:flex; align-items:center; gap:12px;
-      min-width: 220px;
-    }
-    .brand img{
-      width:44px; height:44px; border-radius:10px;
-      object-fit:cover; border:1px solid var(--line);
-      background:#0f1117;
-    }
-    .brand .name{
-      font-weight:700; letter-spacing:.5px;
-      font-size:14px; line-height:1.1;
-    }
-    .brand .sub{color:var(--muted); font-weight:400; font-size:12px; margin-top:2px}
-    .navlinks{display:flex; gap:18px; align-items:center; flex-wrap:wrap; justify-content:flex-end}
-    .navlinks a{
-      text-decoration:none; color:var(--muted);
-      font-size:13px; padding:8px 10px; border-radius:10px;
-    }
-    .navlinks a:hover{color:var(--text); background:rgba(255,255,255,.06)}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      gap:10px;
-      padding:12px 16px;
-      border-radius:14px;
-      border:1px solid rgba(215,180,106,.35);
-      background: linear-gradient(180deg, rgba(215,180,106,.20), rgba(215,180,106,.08));
-      color:var(--text);
-      text-decoration:none;
-      font-weight:700;
-      letter-spacing:.2px;
-      cursor:pointer;
-      box-shadow: 0 8px 24px rgba(0,0,0,.25);
-    }
-    .btn:hover{transform: translateY(-1px); transition:.18s ease;}
-    .btn.secondary{
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.06);
-      font-weight:600;
-      color:var(--text);
-    }
-
-    .hero{ padding:58px 0 28px; }
-    .hero-grid{
-      display:grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap:22px;
-      align-items:stretch;
-    }
-    @media (max-width: 900px){
-      .hero-grid{grid-template-columns:1fr}
-      .brand{min-width:auto}
-    }
-    .card{
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-      border:1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-    .hero-card{padding:28px}
-    .kicker{
-      color: var(--accent);
-      font-weight:700;
-      letter-spacing:.16em;
-      font-size:12px;
-      text-transform:uppercase;
-      margin-bottom:10px;
-    }
-    h1{
-      margin:0 0 10px;
-      font-size:40px;
-      letter-spacing:-.02em;
-      line-height:1.05;
-    }
-    @media (max-width: 520px){
-      h1{font-size:32px}
-    }
-    .lead{
-      color:var(--muted);
-      font-size:15px;
-      max-width: 62ch;
-      margin: 0 0 18px;
-    }
-    .hero-actions{display:flex; gap:12px; flex-wrap:wrap; margin-top:14px}
-    .badges{ display:flex; gap:10px; flex-wrap:wrap; margin-top:18px }
-    .badge{
-      font-size:12px; color:var(--muted);
-      border:1px solid var(--line);
-      padding:8px 10px;
-      border-radius: 999px;
-      background: rgba(0,0,0,.18);
-    }
-
-    .hero-media{
-      overflow:hidden;
-      display:flex;
-      flex-direction:column;
-      min-height: 100%;
-    }
-    .hero-media .media{
-      flex:1;
-      min-height: 280px;
-      background:
-        linear-gradient(135deg, rgba(143,179,255,.18), transparent 50%),
-        linear-gradient(45deg, rgba(215,180,106,.14), transparent 45%),
-        url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=70");
-      background-size: cover;
-      background-position: center;
-      border-bottom:1px solid var(--line);
-    }
-    .hero-media .caption{
-      padding:14px 16px;
-      color: var(--muted);
-      font-size:13px;
-      display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
-    }
-
-    section{padding:26px 0}
-    .section-title{
-      display:flex; justify-content:space-between; align-items:flex-end;
-      gap:16px; margin:0 0 12px;
-    }
-    .section-title h2{ margin:0; font-size:18px; letter-spacing:.2px; }
-    .section-title p{
-      margin:0; color:var(--muted); font-size:13px;
-      max-width: 70ch;
-    }
-
-    .grid-3{
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:14px;
-    }
-    @media (max-width: 900px){ .grid-3{grid-template-columns: 1fr} }
-    .tile{
-      overflow:hidden;
-      border-radius: var(--radius);
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.03);
-      box-shadow: 0 10px 26px rgba(0,0,0,.25);
-    }
-    .tile img{ width:100%; height:220px; object-fit:cover; display:block; }
-    .tile .tile-body{ padding:14px 14px 16px; }
-    .tile .tile-body .t{ font-weight:700; margin:0 0 4px; font-size:14px; }
-    .tile .tile-body .d{ margin:0; color:var(--muted); font-size:13px; }
-
-    .videos{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:14px;
-    }
-    @media (max-width: 900px){ .videos{grid-template-columns: 1fr} }
-    .video{
-      border-radius: var(--radius);
-      overflow:hidden;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.03);
-      box-shadow: 0 10px 26px rgba(0,0,0,.25);
-    }
-    .video iframe{ width:100%; height:320px; border:0; display:block; }
-    .video .meta{
-      padding:12px 14px 14px; color:var(--muted); font-size:13px;
-      display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
-    }
-
-    .contact{
-      padding:28px;
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:18px;
-      align-items:start;
-    }
-    @media (max-width: 900px){ .contact{grid-template-columns: 1fr} }
-    .contact h3{margin:0 0 6px; font-size:18px}
-    .contact p{margin:0 0 14px; color:var(--muted); font-size:13px}
-    .contact .box{
-      border:1px solid var(--line);
-      border-radius: var(--radius);
-      background: rgba(0,0,0,.18);
-      padding:14px;
-    }
-    .kv{display:grid; grid-template-columns: 120px 1fr; gap:10px; font-size:13px; color:var(--muted)}
-    .kv strong{color:var(--text); font-weight:600}
-    footer{
-      padding:22px 0 36px;
-      color:var(--muted);
-      font-size:12px;
-      border-top:1px solid var(--line);
-      margin-top: 16px;
-    }
-
-    /* Modal */
-    dialog{
-      border:none;
-      padding:0;
-      border-radius: 18px;
-      width:min(720px, 92vw);
-      background: var(--card);
-      color: var(--text);
-      box-shadow: 0 30px 80px rgba(0,0,0,.6);
-    }
-    dialog::backdrop{background: rgba(0,0,0,.65)}
-    .modal{
-      padding:18px;
-      border:1px solid var(--line);
-      border-radius:18px;
-    }
-    .modal-head{display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:10px}
-    .modal-head h3{margin:0; font-size:16px}
-    .x{
-      background:transparent;
-      border:1px solid var(--line);
-      color:var(--text);
-      border-radius: 12px;
-      padding:8px 10px;
-      cursor:pointer;
-    }
-    form{display:grid; gap:10px; margin-top:10px}
-    label{font-size:12px; color:var(--muted)}
-    input, textarea{
-      width:100%;
-      padding:12px 12px;
-      border-radius:12px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.04);
-      color: var(--text);
-      font-family: inherit;
-      font-size:14px;
-      outline:none;
-    }
-    textarea{min-height:110px; resize:vertical}
-    .form-actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:4px}
-    .hint{color:var(--muted); font-size:12px; margin-top:6px}
-  </style>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -288,8 +20,7 @@
     <div class="wrap">
       <div class="nav">
         <div class="brand">
-          <!-- Replace with your real logo PNG if you have it -->
-          <img src="https://dummyimage.com/88x88/11131a/ffffff.png&text=A%26E" alt="A & E Logo">
+          <img src="images/AELogo.JPG" alt="A & E Logo">
           <div>
             <div class="name">A &amp; E Motor Works &amp; Storage</div>
             <div class="sub">Vehicle Storage • Storage Maintenance • Vista, CA</div>
@@ -307,6 +38,7 @@
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="hero">
       <div class="wrap">
         <div class="hero-grid">
@@ -343,30 +75,33 @@
       </div>
     </section>
 
+    <!-- PHOTOS -->
     <section id="photos">
       <div class="wrap">
         <div class="section-title">
           <h2>Photos</h2>
-          <p>Replace these with real images of the storage space, vehicles, and the facility.</p>
+          <p></p>
         </div>
 
         <div class="grid-3">
           <div class="tile">
-            <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1600&q=70" alt="Placeholder photo 1">
+            <img src="images/Interior2.JPG" alt="Photo 1">
             <div class="tile-body">
               <p class="t">Secure Storage</p>
               <p class="d">Show the clean, organized space where vehicles are stored.</p>
             </div>
           </div>
+
           <div class="tile">
-            <img src="https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=1600&q=70" alt="Placeholder photo 2">
+            <img src="images/Interior4.JPG" alt="Photo 2">
             <div class="tile-body">
               <p class="t">Battery Care</p>
               <p class="d">Charging, maintenance, and attention that keeps vehicles ready.</p>
             </div>
           </div>
+
           <div class="tile">
-            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=70" alt="Placeholder photo 3">
+            <img src="images/Exterior2.JPG" alt="Photo 3">
             <div class="tile-body">
               <p class="t">Facility</p>
               <p class="d">Exterior, bays, and the professional environment in Vista, CA.</p>
@@ -376,45 +111,28 @@
       </div>
     </section>
 
+    <!-- VIDEOS -->
     <section id="videos">
       <div class="wrap">
         <div class="section-title">
           <h2>Videos</h2>
-          <p>These are placeholders for now. Replace with your own YouTube/Vimeo videos when ready.</p>
         </div>
 
         <div class="videos">
           <div class="video">
             <iframe
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://www.youtube.com/embed/JrBJIfMfmjo"
               title="Placeholder video 1"
               loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
             <div class="meta">
               <span>Facility overview (placeholder)</span>
               <span>~60s</span>
             </div>
           </div>
-
-          <div class="video">
-            <iframe
-              src="https://www.youtube.com/embed/aqz-KE-bpKQ"
-              title="Placeholder video 2"
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-            <div class="meta">
-              <span>Storage maintenance services (placeholder)</span>
-              <span>~90s</span>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact">
       <div class="wrap">
         <div class="card contact">
@@ -422,14 +140,15 @@
             <h3>Contact for a Quote</h3>
             <p>
               Click the button and send a quick note. Include the vehicle type, expected storage duration,
-              and any maintenance requests (startup schedule, battery care, etc.).
+              and any maintenance requests.
             </p>
 
             <div class="hero-actions">
               <button class="btn" id="quoteBtnContact" type="button">Contact for a Quote</button>
               <a class="btn secondary"
-                 href="mailto:eric@aemotorworks.com?subject=Quote%20Request%20-%20A%20%26%20E%20Motor%20Works%20%26%20Storage&body=Hi%20Eric%2C%0A%0AI%27d%20like%20a%20quote%20for%20vehicle%20storage.%0A%0A-%20Vehicle%20(make%2Fmodel%2Fyear)%3A%0A-%20Storage%20start%20date%3A%0A-%20Estimated%20duration%3A%0A-%20Maintenance%20requests%20(startups%2C%20battery%20charging%2Fmaintenance)%3A%0A-%20Best%20callback%20number%3A%0A-%20Any%20photos%2Fnotes%3A%0A%0AThanks%2C%0A"
-              >Email Eric</a>
+                 href="mailto:eric@aemotorworks.com?subject=Quote%20Request%20-%20A%20%26%20E%20Motor%20Works%20%26%20Storage">
+                 Email Eric
+              </a>
             </div>
 
             <p class="hint">
@@ -442,99 +161,44 @@
               <strong>Phone</strong><span>(442) 224-3460</span>
               <strong>Email</strong><span>eric@aemotorworks.com</span>
               <strong>Location</strong><span>Vista, CA</span>
-              <strong>Services</strong><span>Vehicle storage • Periodic startups • Battery charging/maintenance • 24/7 camera access</span>
+              <strong>Services</strong>
+              <span>Vehicle storage • Periodic startups • Battery charging/maintenance • 24/7 camera access</span>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <footer>
-      <div class="wrap">
-        © <span id="year"></span> A &amp; E Motor Works &amp; Storage. All rights reserved.
-      </div>
-    </footer>
   </main>
 
-  <!-- Modal -->
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      © <span id="year"></span> A &amp; E Motor Works &amp; Storage. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- MODAL -->
   <dialog id="quoteDialog">
     <div class="modal">
       <div class="modal-head">
         <h3>Request a Quote</h3>
-        <button class="x" id="closeDialog" type="button" aria-label="Close">✕</button>
+        <button class="x" id="closeDialog" type="button">✕</button>
       </div>
 
-      <p style="margin:0; color:var(--muted); font-size:13px;">
-        Fill this out and we’ll open your email app with a ready-to-send message to Eric.
-      </p>
-
       <form id="quoteForm">
-        <div>
-          <label for="name">Name</label>
-          <input id="name" name="name" placeholder="Your name" autocomplete="name" />
-        </div>
-
-        <div>
-          <label for="phone">Phone</label>
-          <input id="phone" name="phone" placeholder="(###) ###-####" autocomplete="tel" />
-        </div>
-
-        <div>
-          <label for="details">What do you need a quote for?</label>
-          <textarea id="details" name="details" placeholder="Vehicle (make/model/year), storage dates, duration, startup schedule, battery care, camera access questions, etc."></textarea>
-        </div>
+        <input id="name" placeholder="Your name">
+        <input id="phone" placeholder="Phone">
+        <textarea id="details" placeholder="Vehicle details and storage info"></textarea>
 
         <div class="form-actions">
           <button class="btn" type="submit">Open Email</button>
           <button class="btn secondary" type="button" id="cancelDialog">Cancel</button>
         </div>
-
-        <div class="hint">
-          Bare-bones by design (no server). If you want a real form that submits without email, we can wire this to Formspree or Netlify Forms.
-        </div>
       </form>
     </div>
   </dialog>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    const dialog = document.getElementById("quoteDialog");
-    const openButtons = ["quoteBtnTop","quoteBtnHero","quoteBtnContact"]
-      .map(id => document.getElementById(id))
-      .filter(Boolean);
-
-    document.getElementById("closeDialog").addEventListener("click", () => dialog.close());
-    document.getElementById("cancelDialog").addEventListener("click", () => dialog.close());
-    openButtons.forEach(btn => btn.addEventListener("click", () => dialog.showModal()));
-
-    document.getElementById("quoteForm").addEventListener("submit", (e) => {
-      e.preventDefault();
-
-      const nameVal = document.getElementById("name").value.trim();
-      const phoneVal = document.getElementById("phone").value.trim();
-      const detailsVal = document.getElementById("details").value.trim();
-
-      const to = "eric@aemotorworks.com";
-      const subject = encodeURIComponent("Quote Request - A & E Motor Works & Storage");
-
-      const bodyLines = [
-        "Hi Eric,",
-        "",
-        "I'd like a quote for vehicle storage.",
-        nameVal ? `Name: ${nameVal}` : "",
-        phoneVal ? `Phone: ${phoneVal}` : "",
-        detailsVal ? "" : "",
-        detailsVal ? `Details: ${detailsVal}` : "",
-        "",
-        "Thanks,"
-      ].filter(Boolean);
-
-      const body = encodeURIComponent(bodyLines.join("\n"));
-
-      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
-      dialog.close();
-    });
-  </script>
+  <!-- External JS -->
+  <script src="script.js"></script>
 </body>
 </html>
